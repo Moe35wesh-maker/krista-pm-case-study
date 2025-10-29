@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Product Management case study for Krista AI platform by Moses Ondeche">
+    <title>Krista PM Case Study | Moses Ondeche</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: #f8f9fa;
+        }
+        
+        .hero {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 80px 20px;
+            text-align: center;
+        }
+        
+        .hero h1 {
+            font-size: 3em;
+            margin-bottom: 20px;
+            font-weight: 700;
+        }
+        
+        .hero .subtitle {
+            font-size: 1.4em;
+            opacity: 0.95;
+            margin-bottom: 10px;
+        }
+        
+        .hero .author {
+            font-size: 1.1em;
+            opacity: 0.85;
+            margin-top: 20px;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        .section {
+            background: white;
+            padding: 40px;
+            margin: 30px auto;
+            border-radius: 12px;
+            box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+        }
+        
+        .section h2 {
+            color: #667eea;
+            margin-bottom: 20px;
+            font-size: 2em;
+        }
+        
+        .section h3 {
+            color: #333;
+            margin-top: 30px;
+            margin-bottom: 15px;
+        }
+        
+        .section p, .section li {
+            color: #555;
+            margin-bottom: 15px;
+            font-size: 1.05em;
+        }
+        
+        .stats {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            margin: 40px 0;
+        }
+        
+        .stat-card {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 30px;
+            border-radius: 12px;
+            text-align: center;
+        }
+        
+        .stat-card .number {
+            font-size: 2.5em;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        
+        .stat-card .label {
+            font-size: 1em;
+            opacity: 0.9;
+        }
+        
+        .btn {
+            display: inline-block;
+            background: #667eea;
+            color: white;
+            padding: 14px 28px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+            margin: 10px 10px 10px 0;
+            transition: all 0.3s ease;
+        }
+        
+        .btn:hover {
+            background: #5568d3;
+            transform: translateY(-2px);
+        }
+        
+        .timeline {
+            position: relative;
+            padding: 20px 0;
+        }
+        
+        .timeline-item {
+            padding: 20px;
+            background: #f8f9fa;
+            border-left: 4px solid #667eea;
+            margin-bottom: 20px;
+            border-radius: 8px;
+        }
+        
+        .timeline-item h4 {
+            color: #667eea;
+            margin-bottom: 10px;
+        }
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+        
+        th, td {
+            padding: 12px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+        
+        th {
+            background: #667eea;
+            color: white;
+        }
+        
+        tr:hover {
+            background: #f8f9fa;
+        }
+        
+        .contact {
+            text-align: center;
+            padding: 60px 20px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+        }
+        
+        .contact h2 {
+            color: white;
+            font-size: 2.5em;
+            margin-bottom: 20px;
+        }
+        
+        .contact .btn {
+            background: white;
+            color: #667eea;
+        }
+        
+        footer {
+            text-align: center;
+            padding: 30px;
+            background: #2d3748;
+            color: white;
+        }
+        
+        @media (max-width: 768px) {
+            .hero h1 { font-size: 2em; }
+            .stats { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+    <div class="hero">
+        <h1>Krista AI Platform</h1>
+        <p class="subtitle">Product Management Case Study</p>
+        <p class="author">By Moses Ondeche</p>
+    </div>
+
+    <div class="container">
+        <!-- Overview -->
+        <div class="section">
+            <h2>🎯 Executive Summary</h2>
+            <p>
+                This comprehensive product management case study demonstrates strategic roadmap planning, 
+                prioritization methodology, and technical fluency for Krista AI's intelligent automation platform.
+            </p>
+            <p>
+                <strong>Strategic Vision:</strong> Transform Krista into "the operating system for AI-led business processes" 
+                by establishing category leadership in AI agent orchestration while building platform moat through 
+                ecosystem and network effects.
+            </p>
+            
+            <div class="stats">
+                <div class="stat-card">
+                    <div class="number">24</div>
+                    <div class="label">Month Roadmap</div>
+                </div>
+                <div class="stat-card">
+                    <div class="number">$20M+</div>
+                    <div class="label">Projected ARR Impact</div>
+                </div>
+                <div class="stat-card">
+                    <div class="number">30+</div>
+                    <div class="label">Initiatives Prioritized</div>
+                </div>
+                <div class="stat-card">
+                    <div class="number">3x</div>
+                    <div class="label">ARR Growth Target</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- About Krista -->
+        <div class="section">
+            <h2>🔍 About Krista Platform</h2>
+            <p>
+                Krista is an AI-led intelligent automation platform that orchestrates people, systems, and AI agents 
+                through conversational interfaces. It combines RPA, iPaaS, BPM, and AI orchestration capabilities 
+                in a no-code platform designed for business users.
+            </p>
+            
+            <h3>Key Capabilities</h3>
+            <ul>
+                <li><strong>Conversational Automation:</strong> Natural language interface for building and interacting with workflows</li>
+                <li><strong>No-Code Builder:</strong> Business users can create complex automations without programming</li>
+                <li><strong>Integration Platform:</strong> 100+ pre-built connectors to enterprise applications</li>
+                <li><strong>AI & Machine Learning:</strong> Document understanding, anomaly detection, predictive models</li>
+                <li><strong>Enterprise Security:</strong> ISO 27001, SOC 2 Type 2, HIPAA compliant</li>
+            </ul>
+
+            <h3>Strategic Position</h3>
+            <p>
+                Krista occupies a unique position at the intersection of automation and AI orchestration. 
+                While competitors like UiPath focus on RPA and Microsoft focuses on their ecosystem, 
+                Krista enables platform-agnostic orchestration of people, systems, AND AI agents through 
+                an accessible conversational interface.
+            </p>
+        </div>
+
+        <!-- Roadmap -->
+        <div class="section">
+            <h2>🗓️ 24-Month Strategic Roadmap</h2>
+            
+            <div class="timeline">
+                <div class="timeline-item">
+                    <h4>Phase 1: Foundation & Velocity (0-6 Months)</h4>
+                    <p><strong>Theme:</strong> Reduce friction and accelerate self-serve adoption</p>
+                    <p><strong>Top Priorities:</strong></p>
+                    <ul>
+                        <li>Guided Onboarding Flow - Interactive walkthrough to reduce time-to-first-automation from 4-8 hours to &lt;2 hours</li>
+                        <li>Automation Template Library - 50+ pre-built templates across common use cases</li>
+                        <li>Enhanced Core Integrations - Deep integrations for Salesforce, ServiceNow, Workday, Microsoft 365</li>
+                        <li>Integration Health Dashboard - Real-time monitoring and diagnostics</li>
+                    </ul>
+                    <p><strong>Expected Impact:</strong> 40% reduction in time-to-first-automation, 2x increase in self-serve adoption, $1.2M+ ARR impact</p>
+                </div>
+
+                <div class="timeline-item">
+                    <h4>Phase 2: Differentiation & Scale (6-12 Months)</h4>
+                    <p><strong>Theme:</strong> Establish category leadership in AI agent orchestration</p>
+                    <p><strong>Top Priorities:</strong></p>
+                    <ul>
+                        <li>AI Agent Orchestration Hub - Centralized platform to deploy, monitor, and govern multiple AI agents</li>
+                        <li>Community Template Marketplace - Enable users to publish, share, and monetize automation templates</li>
+                        <li>Workflow Analytics & Process Mining - Advanced analytics showing automation ROI and bottlenecks</li>
+                        <li>Advanced Security & Compliance - FedRAMP, enhanced RBAC, audit capabilities</li>
+                    </ul>
+                    <p><strong>Expected Impact:</strong> Category differentiation, $3.6M+ ARR impact, 125% Net Revenue Retention</p>
+                </div>
+
+                <div class="timeline-item">
+                    <h4>Phase 3: Platform Maturity & Ecosystem (12-24 Months)</h4>
+                    <p><strong>Theme:</strong> Become the AI automation operating system through ecosystem</p>
+                    <p><strong>Top Priorities:</strong></p>
+                    <ul>
+                        <li>Krista Developer Platform - APIs, SDKs, and partner ecosystem for third-party extensions</li>
+                        <li>Industry Solution Packs - Pre-configured workflows for Healthcare, Financial Services, Manufacturing, Retail</li>
+                        <li>AI Model Marketplace - Pluggable AI models for specialized tasks (fraud detection, sentiment analysis, etc.)</li>
+                        <li>Global Multi-Region Deployment - EU and APAC regions for data sovereignty</li>
+                    </ul>
+                    <p><strong>Expected Impact:</strong> 25% partner-sourced revenue, $14M+ incremental ARR, sustainable platform moat</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Prioritization -->
+        <div class="section">
+            <h2>⚖️ Prioritization Framework</h2>
+            <p>
+                All initiatives were evaluated using the <strong>RICE framework</strong> to ensure objective, 
+                data-driven decision-making:
+            </p>
+            
+            <h3>RICE Methodology</h3>
+            <table>
+                <tr>
+                    <th>Component</th>
+                    <th>Definition</th>
+                    <th>Example</th>
+                </tr>
+                <tr>
+                    <td><strong>Reach</strong></td>
+                    <td>% of users impacted per quarter</td>
+                    <td>Onboarding affects 100% of new users</td>
+                </tr>
+                <tr>
+                    <td><strong>Impact</strong></td>
+                    <td>Scale: 3=Massive, 2=High, 1=Medium, 0.5=Low</td>
+                    <td>Reducing time-to-value = Massive (3)</td>
+                </tr>
+                <tr>
+                    <td><strong>Confidence</strong></td>
+                    <td>% certainty in estimates (0-100%)</td>
+                    <td>Validated with 20 customers = 90%</td>
+                </tr>
+                <tr>
+                    <td><strong>Effort</strong></td>
+                    <td>Engineer-weeks required</td>
+                    <td>2 engineers × 6 weeks = 12 weeks</td>
+                </tr>
+            </table>
+
+            <p><strong>Formula:</strong> RICE Score = (Reach × Impact × Confidence) / Effort</p>
+
+            <h3>Top Priorities by RICE Score</h3>
+            <table>
+                <tr>
+                    <th>Initiative</th>
+                    <th>RICE Score</th>
+                    <th>Priority</th>
+                    <th>Quarter</th>
+                </tr>
+                <tr>
+                    <td>Integration Health Dashboard</td>
+                    <td>23.8</td>
+                    <td>P0</td>
+                    <td>Q1</td>
+                </tr>
+                <tr>
+                    <td>Guided Onboarding Flow</td>
+                    <td>22.5</td>
+                    <td>P0</td>
+                    <td>Q1</td>
+                </tr>
+                <tr>
+                    <td>Template Library</td>
+                    <td>17.0</td>
+                    <td>P0</td>
+                    <td>Q1</td>
+                </tr>
+                <tr>
+                    <td>Workflow Analytics</td>
+                    <td>9.6</td>
+                    <td>P0</td>
+                    <td>Q3</td>
+                </tr>
+                <tr>
+                    <td>Enhanced Integrations</td>
+                    <td>9.0</td>
+                    <td>P0</td>
+                    <td>Q2</td>
+                </tr>
+            </table>
+
+            <h3>Key Trade-offs Made</h3>
+            <ul>
+                <li><strong>Templates before AI features:</strong> Solves immediate adoption friction, creates compounding value through network effects</li>
+                <li><strong>Agent orchestration before agent enhancements:</strong> Multi-agent management is emerging battleground; platform play wins long-term</li>
+                <li><strong>Developer platform in Year 2:</strong> Ecosystem creates sustainable moat but requires team maturity first</li>
+            </ul>
+        </div>
+
+        <!-- Success Metrics -->
+        <div class="section">
+            <h2>📊 Success Metrics</h2>
+            
+            <h3>North Star Metric</h3>
+            <p>
+                <strong>Time-to-First-Automation:</strong> Reduce from 4-8 hours to &lt;2 hours by Month 6
+            </p>
+            <p>
+                This metric directly correlates with activation, retention, and long-term success.
+            </p>
+
+            <h3>Key Performance Indicators</h3>
+            <table>
+                <tr>
+                    <th>Metric</th>
+                    <th>Baseline</th>
+                    <th>6M Target</th>
+                    <th>12M Target</th>
+                    <th>24M Target</th>
+                </tr>
+                <tr>
+                    <td>Activation Rate</td>
+                    <td>35%</td>
+                    <td>70%</td>
+                    <td>75%</td>
+                    <td>80%</td>
+                </tr>
+                <tr>
+                    <td>Time-to-First-Automation</td>
+                    <td>4-8 hrs</td>
+                    <td>&lt;2 hrs</td>
+                    <td>&lt;1 hr</td>
+                    <td>&lt;30 min</td>
+                </tr>
+                <tr>
+                    <td>Template Usage Rate</td>
+                    <td>20%</td>
+                    <td>80%</td>
+                    <td>85%</td>
+                    <td>90%</td>
+                </tr>
+                <tr>
+                    <td>Net Revenue Retention</td>
+                    <td>110%</td>
+                    <td>120%</td>
+                    <td>130%</td>
+                    <td>140%</td>
+                </tr>
+                <tr>
+                    <td>ARR</td>
+                    <td>$10M</td>
+                    <td>$14M</td>
+                    <td>$24M</td>
+                    <td>$30M</td>
+                </tr>
+            </table>
+        </div>
+
+        <!-- Skills -->
+        <div class="section">
+            <h2>💡 Skills Demonstrated</h2>
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; margin-top: 20px;">
+                <div style="padding: 20px; background: #f8f9fa; border-radius: 8px; border-left: 4px solid #667eea;">
+                    <h4>Strategic Thinking</h4>
+                    <p>24-month vision with category creation strategy and competitive positioning</p>
+                </div>
+                <div style="padding: 20px; background: #f8f9fa; border-radius: 8px; border-left: 4px solid #667eea;">
+                    <h4>Prioritization</h4>
+                    <p>RICE framework applied to 30+ initiatives with clear trade-off analysis</p>
+                </div>
+                <div style="padding: 20px; background: #f8f9fa; border-radius: 8px; border-left: 4px solid #667eea;">
+                    <h4>Customer Focus</h4>
+                    <p>User research and pain points driving every product decision</p>
+                </div>
+                <div style="padding: 20px; background: #f8f9fa; border-radius: 8px; border-left: 4px solid #667eea;">
+                    <h4>Technical Fluency</h4>
+                    <p>Architecture, APIs, and realistic engineering effort estimation</p>
+                </div>
+                <div style="padding: 20px; background: #f8f9fa; border-radius: 8px; border-left: 4px solid #667eea;">
+                    <h4>Communication</h4>
+                    <p>Clear, structured documentation for all stakeholder levels</p>
+                </div>
+                <div style="padding: 20px; background: #f8f9fa; border-radius: 8px; border-left: 4px solid #667eea;">
+                    <h4>Systems Thinking</h4>
+                    <p>Platform effects, ecosystem strategy, and network effects</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Full Documentation -->
+        <div class="section">
+            <h2>📚 View Complete Documentation</h2>
+            <p>
+                This page provides an overview of the case study. The complete documentation includes detailed 
+                analysis, month-by-month roadmaps, prioritization frameworks, and success metrics.
+            </p>
+            <p>
+                <a href="https://github.com/Moe35wesh-maker/krista-pm-case-study" class="btn">View Full Case Study on GitHub</a>
+            </p>
+        </div>
+    </div>
+
+    <!-- Contact -->
+    <div class="contact">
+        <h2>Let's Connect</h2>
+        <p>Interested in discussing product strategy, roadmap planning, or this case study?</p>
+        <div>
+            <a href="https://www.linkedin.com/in/moses-ondeche-3a0a5835/" class="btn">LinkedIn</a>
+            <a href="mailto:moe35wesh@gmail.com" class="btn">Email Me</a>
+            <a href="https://github.com/Moe35wesh-maker/krista-pm-case-study" class="btn">GitHub</a>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Moses Ondeche | Product Manager</p>
+        <p style="margin-top: 10px; opacity: 0.8;">
+            This case study demonstrates strategic product management capabilities.
+        </p>
+    </footer>
+</body>
+</html>
