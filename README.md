@@ -77,9 +77,9 @@ Each decision in this roadmap is tied to:
 
 ## 📝 Author
 
-Your Name  
+Moses Ondeche  
 Product Manager Case Study for Krista  
-[LinkedIn](your-linkedin) | [Portfolio](your-portfolio)
+[LinkedIn](https://www.linkedin.com/in/moses-ondeche-3a0a5835/) | [Portfolio](your-portfolio)
 
 ---
 
